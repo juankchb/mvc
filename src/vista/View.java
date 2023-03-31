@@ -44,7 +44,9 @@ public class View {
         return panel;
     }
 }
-
+/**
+ * La clase ImageFactory utiliza un Map para almacenar las imágenes, con la clave siendo el nombre del archivo de la imagen. Cuando se solicita una imagen, la clase ImageFactory verifica si la imagen ya se ha cargado en el Map. Si es así, devuelve la imagen almacenada en el Map. De lo contrario, carga la imagen desde el archivo, la almacena en el Map y la devuelve.
+ */
 class ImageFactory {
     private Map<String, Image> imageMap;
 
