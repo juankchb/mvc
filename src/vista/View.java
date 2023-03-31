@@ -17,7 +17,7 @@ public class View {
             public void paintComponent(Graphics g) {
                 super.paintComponent(g);
                 // Dibujar la imagen de la X en el centro del panel
-                g.drawImage(new ImageIcon("C:\\Users\\golden\\Downloads\\imagenes\\freezer.jpg").getImage(), getWidth() / 2 - 16, getHeight() / 2 - 16, null);
+                g.drawImage(new ImageIcon("./src/imagenes/freezer.jpg").getImage(), getWidth() / 2 - 16, getHeight() / 2 - 16, null);
 
                 // Dibujar la imagen pequeña en posiciones aleatorias
                 Random random = new Random();
@@ -30,7 +30,7 @@ public class View {
         };
 
         // Cargar la imagen pequeña
-        smallImage = new ImageIcon("C:\\Users\\golden\\Downloads\\imagenes\\goku.jpg");
+        smallImage = new ImageIcon("./src/imagenes/goku.jpg");
 
         frame.add(panel);
         frame.setVisible(true);
